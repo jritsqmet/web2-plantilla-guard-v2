@@ -21,7 +21,7 @@ export class LoginComponent {
     this.servicio.postUsers(formulario.value).subscribe( p=>{
       this.token= p.accessToken
       if(this.token != ''){
-        localStorage.setItem("token", this.token)
+        localStorage.setItem("token", "true")
       }
       
     }
