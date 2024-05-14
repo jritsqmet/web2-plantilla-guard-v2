@@ -10,4 +10,6 @@ import { RouterLink } from '@angular/router';
 })
 export class NavBarComponent {
 
+ ocultar = localStorage.getItem('token')
+  
 }

@@ -1,4 +1,4 @@
-import { CanActivateFn } from '@angular/router';
+import { CanActivateFn, CanMatchFn } from '@angular/router';
 
 export const loginGuard: CanActivateFn = (route, state) => {
 
@@ -7,6 +7,17 @@ export const loginGuard: CanActivateFn = (route, state) => {
   }else{
     return false;
   }
-  
-  
+
 };
+
+export const registroGuard: CanMatchFn = (route, state) => {
+  
+  if(localStorage.getItem('token') == 'true'){
+    return false
+  }else{
+    return true;
+  }
+
+};
+
+

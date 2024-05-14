@@ -6,12 +6,20 @@
         <li class="nav-item">
           <a class="nav-link" routerLink="home">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="privado">Privado</a>
-        </li>
+        
+
+        @if(ocultar != 'true'){
+        <!------------------------------>
         <li class="nav-item">
           <a class="nav-link" routerLink="login">Login</a>
         </li>
+        <!------------------------------>
+        }@else {
+          <li class="nav-item">
+            <a class="nav-link" routerLink="privado">Privado</a>
+          </li>
+        }
+
         <li class="nav-item">
             <a class="nav-link" routerLink="registro">Registro</a>
           </li>

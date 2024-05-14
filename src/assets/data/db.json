@@ -3,17 +3,21 @@
     {
       "email": "an123@yop.com",
       "password": "$2a$10$iJCal.7LvYsAluyaaink/uB4/QBHTRAIWUK5dtKNSNiDnanP2st4q",
+      "type": "user",
       "id": 1
     },
     {
       "email": "juan@yop.com",
       "password": "$2a$10$VkmBQzPPJNkSlWxNuvs0ResqZobtucSRaWI6Yjw7YVG6kBlhPjlcS",
-      "id": 2
+      "id": 2,
+      "type": "user"
     },
     {
       "email": "mfer@yop.com",
       "password": "$2a$10$NwWRlgVKuxaDX.CgY621lOTOaxKPXxMxtH2x8S48GpUg8nPGDV4GG",
+      "type": "admin",
       "id": 3
     }
+
   ]
 }

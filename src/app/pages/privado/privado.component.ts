@@ -9,4 +9,11 @@ import { Component } from '@angular/core';
 })
 export class PrivadoComponent {
 
+
+  cerrar(){
+    //localStorage.setItem("token", 'false')
+    localStorage.removeItem('token')
+    window.location.href='login'
+  }
+
 }
